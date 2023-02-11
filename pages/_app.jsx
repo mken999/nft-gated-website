@@ -1,11 +1,11 @@
 import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import Head from "next/head";
-import ThirdwebGuideFooter from "../components/ThirdwebGuideFooter";
+// import ThirdwebGuideFooter from "../components/ThirdwebGuideFooter";
 import { domainName } from "../const/yourDetails";
 import "../styles/globals.css";
 
 // This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mumbai;
+const activeChainId = ChainId.Polygon;
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-      <ThirdwebGuideFooter />
+      {/* <ThirdwebGuideFooter /> */}
     </ThirdwebProvider>
   );
 }
